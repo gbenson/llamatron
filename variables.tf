@@ -1,3 +1,9 @@
+variable "project_codename" {
+  description = "Internal name of this project or deployment"
+  type        = string
+  sensitive   = true
+}
+
 variable "admin_ip_prefix" {
   description = "CIDR from which administration may be performed"
   type        = string
